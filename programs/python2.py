@@ -199,7 +199,9 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(string, num):
-    return ""
+    a = (len(string) - num) / 2
+    result = string[:int(a)] + string[len(string) - int(a):]
+    return result
 
     # <QUESTION 9>
 
