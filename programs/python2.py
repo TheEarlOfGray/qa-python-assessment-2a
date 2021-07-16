@@ -178,6 +178,9 @@ def six(string):
     # Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
+    list1 = sorted([a, b, c])
+    if (list1[1] - list1[0]) == (list1[2] - list1[1]):
+        return True
     return False
 
     # <QUESTION 8>
