@@ -51,7 +51,10 @@ def one(string):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(num):
-    return False
+    for i in range(2, (num-1)):
+        if num % i == 0:
+            return False
+    return True
 
     # <QUESTION 3>
 
