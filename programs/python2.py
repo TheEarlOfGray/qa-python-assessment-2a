@@ -29,6 +29,9 @@
     # <HINT>
     # How does a for loop iterate through a string?
 
+from random import randrange
+
+
 def one(string):
     result = ""
     for i in string:
@@ -103,8 +106,6 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(string1, string2):
-    # string1 = list(string1)
-    # string2 = list(string2)
     zipped = zip(list(string1), list(string2))
     result = ""
     for i, j in zipped:
@@ -130,7 +131,9 @@ def four(string1, string2):
     # The random module contains a function called randint.
 
 def five():
-    return []
+    import random
+    result = [randrange(100, 200, 2), randrange(100, 200, 2), randrange(100, 200, 2), randrange(100, 200, 2), randrange(100, 200, 2)]
+    return result
 
     # <QUESTION 6>
 
