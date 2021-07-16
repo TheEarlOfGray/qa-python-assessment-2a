@@ -71,7 +71,10 @@ def two(num):
     # What happens if you multiply a string by a number?
 
 def three(a):
-    return 1
+    a = str(a)
+    result = int(a) + int(a + a) + int(a + a + a) + int(a + a + a + a)
+    print(result)
+    return result
 
     # <QUESTION 4>
 
