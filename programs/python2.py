@@ -152,6 +152,8 @@ def five():
     # There are no hints for this question.
     
 def six(string):
+    if string[-1].lower() == 'y' and string[-2].lower() == 'p':
+        return True
     return False
 
     # <QUESTION 7>
