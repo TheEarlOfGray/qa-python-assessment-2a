@@ -30,7 +30,10 @@
     # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+    result = ""
+    for i in string:
+        result += i*3
+    return result
 
     # <QUESTION 2>
 
