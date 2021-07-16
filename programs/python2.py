@@ -218,7 +218,17 @@ def eight(string, num):
     # There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+    if len(string1) <= len(string2):
+        for i in string1:
+            if i not in string2:
+                return False
+    elif len(string2) < len(string1):
+        for i in string2:
+            if i not in string1:
+                return False
+
+
+    return True
 
     # <QUESTION 10>
 
