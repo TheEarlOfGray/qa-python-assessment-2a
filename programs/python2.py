@@ -103,7 +103,17 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(string1, string2):
-    return ""
+    # string1 = list(string1)
+    # string2 = list(string2)
+    zipped = zip(list(string1), list(string2))
+    result = ""
+    for i, j in zipped:
+        result += i + j
+    return result
+
+    # for i, j in string1, string2:
+    #     result += i + j
+    # return result
 
     # <QUESTION 5>
 
